@@ -1,0 +1,25 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\Client All Project\codecanyon-lKeo9KEN-secret-calculator-vault-hide-photo-lock-videos-android-code-admob-ads\Code\library\src\main\AndroidManifest.xml:2:1-72
+INJECTED from E:\Client All Project\codecanyon-lKeo9KEN-secret-calculator-vault-hide-photo-lock-videos-android-code-admob-ads\Code\library\src\main\AndroidManifest.xml:2:1-72
+INJECTED from E:\Client All Project\codecanyon-lKeo9KEN-secret-calculator-vault-hide-photo-lock-videos-android-code-admob-ads\Code\library\src\main\AndroidManifest.xml:2:1-72
+	package
+		INJECTED from E:\Client All Project\codecanyon-lKeo9KEN-secret-calculator-vault-hide-photo-lock-videos-android-code-admob-ads\Code\library\src\main\AndroidManifest.xml
+		ADDED from E:\Client All Project\codecanyon-lKeo9KEN-secret-calculator-vault-hide-photo-lock-videos-android-code-admob-ads\Code\library\src\main\AndroidManifest.xml:2:1-72
+		INJECTED from E:\Client All Project\codecanyon-lKeo9KEN-secret-calculator-vault-hide-photo-lock-videos-android-code-admob-ads\Code\library\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\Client All Project\codecanyon-lKeo9KEN-secret-calculator-vault-hide-photo-lock-videos-android-code-admob-ads\Code\library\src\main\AndroidManifest.xml:2:11-69
+uses-sdk
+INJECTED from E:\Client All Project\codecanyon-lKeo9KEN-secret-calculator-vault-hide-photo-lock-videos-android-code-admob-ads\Code\library\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\Client All Project\codecanyon-lKeo9KEN-secret-calculator-vault-hide-photo-lock-videos-android-code-admob-ads\Code\library\src\main\AndroidManifest.xml
+INJECTED from E:\Client All Project\codecanyon-lKeo9KEN-secret-calculator-vault-hide-photo-lock-videos-android-code-admob-ads\Code\library\src\main\AndroidManifest.xml
+INJECTED from E:\Client All Project\codecanyon-lKeo9KEN-secret-calculator-vault-hide-photo-lock-videos-android-code-admob-ads\Code\library\src\main\AndroidManifest.xml
+INJECTED from E:\Client All Project\codecanyon-lKeo9KEN-secret-calculator-vault-hide-photo-lock-videos-android-code-admob-ads\Code\library\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from E:\Client All Project\codecanyon-lKeo9KEN-secret-calculator-vault-hide-photo-lock-videos-android-code-admob-ads\Code\library\src\main\AndroidManifest.xml
+		ADDED from E:\Client All Project\codecanyon-lKeo9KEN-secret-calculator-vault-hide-photo-lock-videos-android-code-admob-ads\Code\library\src\main\AndroidManifest.xml
+		INJECTED from E:\Client All Project\codecanyon-lKeo9KEN-secret-calculator-vault-hide-photo-lock-videos-android-code-admob-ads\Code\library\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\Client All Project\codecanyon-lKeo9KEN-secret-calculator-vault-hide-photo-lock-videos-android-code-admob-ads\Code\library\src\main\AndroidManifest.xml
+		ADDED from E:\Client All Project\codecanyon-lKeo9KEN-secret-calculator-vault-hide-photo-lock-videos-android-code-admob-ads\Code\library\src\main\AndroidManifest.xml
+		INJECTED from E:\Client All Project\codecanyon-lKeo9KEN-secret-calculator-vault-hide-photo-lock-videos-android-code-admob-ads\Code\library\src\main\AndroidManifest.xml

@@ -1,0 +1,797 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#88000000"
+    android:orientation="vertical"
+    android:id="@+id/display_color"
+
+    >
+
+
+
+  <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="2.0">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/settingsButton"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/baseline_more_vert_24"
+
+                />
+
+            <HorizontalScrollView
+                android:id="@+id/display_hsv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="right">
+
+                    <TextView
+                        android:id="@+id/display_primary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/standard_margin"
+                        android:layout_marginRight="@dimen/standard_margin"
+                        android:text="text"
+                        android:textColor="@color/blueclr"
+                        android:textSize="@dimen/display_primary_text_port"
+                        android:fontFamily="@font/ndotfont"
+                        />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <Space
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0" />
+
+            <TextView
+                android:id="@+id/display_secondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="@dimen/standard_margin"
+                android:layout_marginRight="@dimen/standard_margin"
+                android:text="text"
+                android:textColor="@color/blueclr"
+                android:textSize="@dimen/display_secondary_text_port"
+                android:fontFamily="@font/ndotfont"
+                />
+
+            <Space
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="3.0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/display_overlay"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:alpha="0.0"
+            android:background="#8A000000"
+            android:orientation="horizontal" />
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#00000000"
+        android:gravity="right"
+        android:paddingRight="@dimen/standard_margin"
+        android:layout_marginBottom="5dp"
+        >
+        <ImageButton
+            android:id="@+id/history"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/baseline_history_24"
+            android:background="@drawable/bggray"
+            android:layout_marginRight="5dp"
+
+
+
+            />
+
+    <ImageButton
+        android:id="@+id/up_down"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/baseline_keyboard_double_arrow_up_24"
+        android:background="@drawable/bggray"
+
+
+
+        />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/history_visiable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+
+        >
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="History"
+            android:visibility="gone"
+            android:textSize="40dp"
+            android:textColor="@color/ColorLightBlue"
+            android:layout_marginLeft="20dp"
+            />
+
+        <TextView
+            android:id="@+id/no_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Data"
+            android:visibility="gone"
+            android:textSize="40dp"
+            android:textColor="@color/red"
+            android:layout_marginLeft="20dp"
+            />
+        <ListView
+            android:id="@+id/history_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/visible"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:background="@drawable/for_sin_style"
+        android:orientation="vertical"
+
+
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/button_sin"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="?selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:text="sin"
+                android:textSize="@dimen/panel_2_button_text_port"
+                android:fontFamily="@font/ndotfont"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:id="@+id/button_cos"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="?selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:text="cos"
+                android:textSize="@dimen/panel_2_button_text_port"
+                android:fontFamily="@font/ndotfont"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:id="@+id/button_tan"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="?selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:text="tan"
+                android:textSize="@dimen/panel_2_button_text_port"
+                android:fontFamily="@font/ndotfont"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:id="@+id/button_ln"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="?selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:text="ln"
+                android:textSize="@dimen/panel_2_button_text_port"
+                android:fontFamily="@font/ndotfont"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:id="@+id/button_log"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="?selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:text="log"
+                android:textSize="@dimen/panel_2_button_text_port"
+                android:fontFamily="@font/ndotfont"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:id="@+id/button_factorial1"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="?selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:text="!"
+                android:textSize="@dimen/panel_2_button_text_port"
+                android:fontFamily="@font/ndotfont"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/button_pi"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="?selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:text="π"
+                android:textColor="@color/white"
+                android:fontFamily="@font/ndotfont"
+                android:textSize="@dimen/panel_2_button_text_port" />
+
+            <TextView
+                android:id="@+id/button_e"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="?selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:text="e"
+                android:textSize="@dimen/panel_2_button_text_port"
+                android:fontFamily="@font/ndotfont"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:id="@+id/button_square_root1"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="?selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:text="√"
+                android:textSize="@dimen/panel_2_button_text_port"
+                android:fontFamily="@font/ndotfont"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:id="@+id/button_start_parenthesis"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="?selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="("
+                android:fontFamily="@font/ndotfont"
+                android:textSize="@dimen/panel_2_button_text_port" />
+
+            <TextView
+                android:id="@+id/button_end_parenthesis"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="?selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text=")"
+                android:fontFamily="@font/ndotfont"
+                android:textSize="@dimen/panel_2_button_text_port" />
+
+            <TextView
+                android:id="@+id/button_exponent111"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="?selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:text="%"
+                android:textColor="@color/white"
+                android:fontFamily="@font/ndotfont"
+                android:textSize="@dimen/panel_2_button_text_port" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/radios"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="4.0"
+        android:background="@drawable/style_own"
+        android:orientation="horizontal"
+        >
+
+
+
+        <LinearLayout
+            android:id="@+id/key_visiable"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:background="@drawable/style_own"
+            android:visibility="visible"
+
+            >
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/button_square_root"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/bgblack"
+                    android:gravity="center"
+                    android:text="√"
+                    android:fontFamily="@font/ndotfont"
+                    android:textColor="#FDFCFC"
+                    android:textSize="@dimen/panel_2_button_text_port" />
+                <!--                />-->
+
+                <!--            <com.example.ryangrady.utilities.CeraProBoldTextView-->
+                <!--                android:layout_width="fill_parent"-->
+                <!--                android:layout_height="1.5px"-->
+                <!--                android:background="@color/gray" />-->
+
+                <TextView
+                    android:id="@+id/button_7"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_margin="7dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/bgwhite"
+                    android:gravity="center"
+                    android:text="7"
+                    android:fontFamily="@font/ndotfont"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/panel_1_button_text_port" />
+
+                <!--            <com.example.ryangrady.utilities.CeraProBoldTextView-->
+                <!--                android:layout_width="fill_parent"-->
+                <!--                android:layout_height="1.5px"-->
+                <!--                android:background="@color/gray" />-->
+
+                <TextView
+                    android:id="@+id/button_4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_margin="7dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/bgwhite"
+                    android:gravity="center"
+                    android:text="4"
+                    android:fontFamily="@font/ndotfont"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/panel_1_button_text_port" />
+
+                <!--            <com.example.ryangrady.utilities.CeraProBoldTextView-->
+                <!--                android:layout_width="fill_parent"-->
+                <!--                android:layout_height="1.5px"-->
+                <!--                android:background="@color/gray" />-->
+
+                <TextView
+                    android:id="@+id/button_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_margin="7dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/bgwhite"
+                    android:gravity="center"
+                    android:text="1"
+                    android:fontFamily="@font/ndotfont"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/panel_1_button_text_port" />
+
+                <!--            <com.example.ryangrady.utilities.CeraProBoldTextView-->
+                <!--                android:layout_width="fill_parent"-->
+                <!--                android:layout_height="1.5px"-->
+                <!--                android:background="@color/gray" />-->
+
+                <LinearLayout
+                    android:id="@+id/button_delete"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_margin="7dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/bgwhite"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="?backspace" />
+                </LinearLayout>
+
+                <!--            <com.example.ryangrady.utilities.CeraProBoldTextView-->
+                <!--                android:layout_width="fill_parent"-->
+                <!--                android:layout_height="1.5px"-->
+                <!--                android:background="@color/gray" />-->
+            </LinearLayout>
+
+            <!--        <com.example.ryangrady.utilities.CeraProBoldTextView-->
+            <!--            android:layout_width="1.5px"-->
+            <!--            android:layout_height="fill_parent"-->
+            <!--            android:background="@color/gray" />-->
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/button_factorial"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/bgblack"
+                    android:gravity="center"
+                    android:fontFamily="@font/ndotfont"
+                    android:text="!"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/panel_2_button_text_port" />
+
+                <!--            <com.example.ryangrady.utilities.CeraProBoldTextView-->
+                <!--                android:layout_width="fill_parent"-->
+                <!--                android:layout_height="1.5px"-->
+                <!--                android:background="@color/gray" />-->
+
+                <TextView
+                    android:id="@+id/button_8"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_margin="7dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/bgwhite"
+                    android:gravity="center"
+                    android:text="8"
+                    android:fontFamily="@font/ndotfont"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/panel_1_button_text_port" />
+
+                <!--            <com.example.ryangrady.utilities.CeraProBoldTextView-->
+                <!--                android:layout_width="fill_parent"-->
+                <!--                android:layout_height="1.5px"-->
+                <!--                android:background="@color/gray" />-->
+
+                <TextView
+                    android:id="@+id/button_5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_margin="7dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/bgwhite"
+                    android:gravity="center"
+                    android:text="5"
+                    android:fontFamily="@font/ndotfont"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/panel_1_button_text_port" />
+
+                <!--            <com.example.ryangrady.utilities.CeraProBoldTextView-->
+                <!--                android:layout_width="fill_parent"-->
+                <!--                android:layout_height="1.5px"-->
+                <!--                android:background="@color/gray" />-->
+
+                <TextView
+                    android:id="@+id/button_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_margin="7dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/bgwhite"
+                    android:gravity="center"
+                    android:text="2"
+                    android:fontFamily="@font/ndotfont"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/panel_1_button_text_port" />
+
+                <!--            <com.example.ryangrady.utilities.CeraProBoldTextView-->
+                <!--                android:layout_width="fill_parent"-->
+                <!--                android:layout_height="1.5px"-->
+                <!--                android:background="@color/gray" />-->
+
+                <TextView
+                    android:id="@+id/button_0"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_margin="7dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/bgwhite"
+                    android:gravity="center"
+                    android:text="0"
+                    android:fontFamily="@font/ndotfont"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/panel_1_button_text_port" />
+
+                <!--            <com.example.ryangrady.utilities.CeraProBoldTextView-->
+                <!--                android:layout_width="fill_parent"-->
+                <!--                android:layout_height="1.5px"-->
+                <!--                android:background="@color/gray" />-->
+            </LinearLayout>
+
+            <!--        <com.example.ryangrady.utilities.CeraProBoldTextView-->
+            <!--            android:layout_width="1.5px"-->
+            <!--            android:layout_height="fill_parent"-->
+            <!--            android:background="@color/gray" />-->
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/button_exponent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/bgblack"
+                    android:gravity="center"
+                    android:text="%"
+                    android:fontFamily="@font/ndotfont"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/panel_2_button_text_port" />
+
+                <!--            <com.example.ryangrady.utilities.CeraProBoldTextView-->
+                <!--                android:layout_width="fill_parent"-->
+                <!--                android:layout_height="1.5px"-->
+                <!--                android:background="@color/gray" />-->
+
+                <TextView
+                    android:id="@+id/button_9"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_margin="7dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/bgwhite"
+                    android:gravity="center"
+                    android:text="9"
+                    android:fontFamily="@font/ndotfont"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/panel_1_button_text_port" />
+
+                <!--            <com.example.ryangrady.utilities.CeraProBoldTextView-->
+                <!--                android:layout_width="fill_parent"-->
+                <!--                android:layout_height="1.5px"-->
+                <!--                android:background="@color/gray" />-->
+
+                <TextView
+                    android:id="@+id/button_6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_margin="7dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/bgwhite"
+                    android:gravity="center"
+                    android:text="6"
+                    android:fontFamily="@font/ndotfont"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/panel_1_button_text_port" />
+
+                <!--            <com.example.ryangrady.utilities.CeraProBoldTextView-->
+                <!--                android:layout_width="fill_parent"-->
+                <!--                android:layout_height="1.5px"-->
+                <!--                android:background="@color/gray" />-->
+
+                <TextView
+                    android:id="@+id/button_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_margin="7dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/bgwhite"
+                    android:gravity="center"
+                    android:text="3"
+                    android:fontFamily="@font/ndotfont"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/panel_1_button_text_port" />
+
+                <!--            <com.example.ryangrady.utilities.CeraProBoldTextView-->
+                <!--                android:layout_width="fill_parent"-->
+                <!--                android:layout_height="1.5px"-->
+                <!--                android:background="@color/gray" />-->
+
+                <TextView
+                    android:id="@+id/button_decimal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_margin="7dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/bgwhite"
+                    android:gravity="center"
+                    android:text="."
+                    android:fontFamily="@font/ndotfont"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/panel_1_button_text_port" />
+
+                <!--            <com.example.ryangrady.utilities.CeraProBoldTextView-->
+                <!--                android:layout_width="fill_parent"-->
+                <!--                android:layout_height="1.5px"-->
+                <!--                android:background="@color/gray" />-->
+            </LinearLayout>
+
+            <!--        <com.example.ryangrady.utilities.CeraProBoldTextView-->
+            <!--            android:layout_width="1.5px"-->
+            <!--            android:layout_height="fill_parent"-->
+            <!--            android:background="@color/gray" />-->
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/button_divide"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/bgblack"
+                    android:gravity="center"
+                    android:text="÷"
+                    android:fontFamily="@font/ndotfont"
+                    android:textColor="@color/white_pressed"
+                    android:textSize="@dimen/panel_1_button_text_port" />
+
+                <!--            <com.example.ryangrady.utilities.CeraProBoldTextView-->
+                <!--                android:layout_width="fill_parent"-->
+                <!--                android:layout_height="1.5px"-->
+                <!--                android:background="@color/gray" />-->
+
+                <TextView
+                    android:id="@+id/button_multiply"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_margin="7dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/bgblack"
+                    android:gravity="center"
+                    android:text="×"
+                    android:fontFamily="@font/ndotfont"
+                    android:textColor="@color/white_pressed"
+                    android:textSize="@dimen/panel_1_button_text_port" />
+
+                <!--            <com.example.ryangrady.utilities.CeraProBoldTextView-->
+                <!--                android:layout_width="fill_parent"-->
+                <!--                android:layout_height="1.5px"-->
+                <!--                android:background="@color/gray" />-->
+
+                <TextView
+                    android:id="@+id/button_subtract"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_margin="7dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/bgblack"
+                    android:gravity="center"
+                    android:text="−"
+                    android:fontFamily="@font/ndotfont"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/panel_1_button_text_port" />
+
+                <!--            <com.example.ryangrady.utilities.CeraProBoldTextView-->
+                <!--                android:layout_width="fill_parent"-->
+                <!--                android:layout_height="1.5px"-->
+                <!--                android:background="@color/gray" />-->
+
+                <TextView
+                    android:id="@+id/button_add"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_margin="7dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/bgblack"
+                    android:gravity="center"
+                    android:text="+"
+                    android:fontFamily="@font/ndotfont"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/panel_1_button_text_port" />
+
+                <!--            <com.example.ryangrady.utilities.CeraProBoldTextView-->
+                <!--                android:layout_width="fill_parent"-->
+                <!--                android:layout_height="1.5px"-->
+                <!--                android:background="@color/gray" />-->
+
+                <TextView
+                    android:id="@+id/button_equals"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_margin="7dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/bgred"
+                    android:gravity="center"
+                    android:text="="
+                    android:fontFamily="@font/ndotfont"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/panel_1_button_text_port" />
+
+                <!--            <com.example.ryangrady.utilities.CeraProBoldTextView-->
+                <!--                android:layout_width="fill_parent"-->
+                <!--                android:layout_height="1.5px"-->
+                <!--                android:background="@color/gray" />-->
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
