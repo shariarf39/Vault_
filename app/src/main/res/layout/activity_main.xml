@@ -15,7 +15,9 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="55dp">
+            android:layout_height="55dp"
+            android:background="#C3494747"
+            >
 
 
             <include
@@ -28,8 +30,8 @@
                 android:layout_centerInParent="true"
                 android:fontFamily="@font/mono_font"
                 android:text="@string/app_name"
-                android:textColor="#FFFFFF"
 
+                android:textColor="#FFFFFF"
                 android:textSize="20dp" />
         </RelativeLayout>
 
@@ -55,10 +57,10 @@
                 android:layout_height="250dp"
                 >
             <ImageView
-                android:id="@+id/photo"
+
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/bgred"
+                android:src="@drawable/mid_ic"
                 android:layout_centerVertical="true"
             />
             </RelativeLayout>
@@ -68,19 +70,20 @@
                 android:layout_height="250dp"
                 android:orientation="vertical"
                 android:gravity="center"
+                android:layout_marginLeft="20dp"
                 >
 
                 <ImageView
-
-                    android:layout_width="100dp"
+                    android:id="@+id/photo"
+                    android:layout_width="wrap_content"
                     android:layout_height="100dp"
-                    android:src="@drawable/bgred"
+                    android:src="@drawable/photo_re"
                     />
                 <ImageView
-
-                    android:layout_width="100dp"
+                    android:id="@+id/video"
+                    android:layout_width="wrap_content"
                     android:layout_height="100dp"
-                    android:src="@drawable/bgred"
+                    android:src="@drawable/vedio_re"
                     />
 
 
@@ -104,7 +107,7 @@
 
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/bgred"
+                    android:src="@drawable/mid_ic"
                     android:layout_centerVertical="true"
                     />
             </RelativeLayout>
@@ -114,19 +117,20 @@
                 android:layout_height="250dp"
                 android:orientation="vertical"
                 android:gravity="center"
+                android:layout_marginLeft="20dp"
                 >
 
                 <ImageView
-
-                    android:layout_width="100dp"
+                    android:id="@+id/audio"
+                    android:layout_width="wrap_content"
                     android:layout_height="100dp"
-                    android:src="@drawable/bgred"
+                    android:src="@drawable/audio_res"
                     />
                 <ImageView
-
-                    android:layout_width="100dp"
+                    android:id="@+id/password"
+                    android:layout_width="wrap_content"
                     android:layout_height="100dp"
-                    android:src="@drawable/bgred"
+                    android:src="@drawable/password_re"
                     />
 
 
@@ -151,7 +155,7 @@
 
                             android:layout_width="100dp"
                             android:layout_height="100dp"
-                            android:src="@drawable/bgred"
+                            android:src="@drawable/mid_ic"
                             android:layout_centerVertical="true"
                             />
                     </RelativeLayout>
@@ -161,19 +165,20 @@
                         android:layout_height="250dp"
                         android:orientation="vertical"
                         android:gravity="center"
+                        android:layout_marginLeft="20dp"
                         >
 
                         <ImageView
-
-                            android:layout_width="100dp"
+                            android:id="@+id/document"
+                            android:layout_width="wrap_content"
                             android:layout_height="100dp"
-                            android:src="@drawable/bgred"
-                            />
+                            android:src="@drawable/du_re" />
+
                         <ImageView
-
-                            android:layout_width="100dp"
+                            android:id="@+id/todolist"
+                            android:layout_width="wrap_content"
                             android:layout_height="100dp"
-                            android:src="@drawable/bgred"
+                            android:src="@drawable/todo_re"
                             />
 
 
@@ -184,52 +189,6 @@
 
 
                 <!--fsdfsdfds-->
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="250dp"
-                    android:orientation="horizontal"
-                    android:paddingLeft="20dp"
-                    >
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="250dp"
-                        >
-                        <ImageView
-
-                            android:layout_width="100dp"
-                            android:layout_height="100dp"
-                            android:src="@drawable/bgred"
-                            android:layout_centerVertical="true"
-                            />
-                    </RelativeLayout>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="250dp"
-                        android:orientation="vertical"
-                        android:gravity="center"
-                        >
-
-                        <ImageView
-
-                            android:layout_width="100dp"
-                            android:layout_height="100dp"
-                            android:src="@drawable/bgred"
-                            />
-                        <ImageView
-
-                            android:layout_width="100dp"
-                            android:layout_height="100dp"
-                            android:src="@drawable/bgred"
-                            />
-
-
-                    </LinearLayout>
-
-
-                </LinearLayout>
-
 
 
             </LinearLayout>
@@ -284,7 +243,7 @@
                             android:layout_weight="1">
 
                             <ImageView
-                                android:id="@+id/video"
+
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_margin="15dp"
@@ -314,7 +273,7 @@
                             android:layout_weight="1">
 
                             <ImageView
-                                android:id="@+id/gallary"
+                               android:id="@+id/gallary"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_margin="15dp"
@@ -328,7 +287,7 @@
                             android:layout_weight="1">
 
                             <ImageView
-                                android:id="@+id/audio"
+
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_margin="15dp"
@@ -349,7 +308,7 @@
                             android:layout_weight="1">
 
                             <ImageView
-                                android:id="@+id/document"
+
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_margin="15dp"
@@ -363,7 +322,7 @@
                             android:layout_weight="1">
 
                             <ImageView
-                                android:id="@+id/password"
+
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_margin="15dp"
@@ -406,7 +365,7 @@
                             android:layout_weight="1">
 
                             <ImageView
-                                android:id="@+id/todolist"
+
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_margin="15dp"

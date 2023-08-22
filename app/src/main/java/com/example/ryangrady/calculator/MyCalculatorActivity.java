@@ -497,6 +497,8 @@ public class MyCalculatorActivity extends AppCompatActivity {
             findViewById(R.id.display_color).setBackgroundColor(Color.parseColor("#ffffff"));
             findViewById(R.id.radios).setBackgroundResource(R.drawable.whiteback_style_1);
             findViewById(R.id.key_visiable).setBackgroundResource(R.drawable.whiteback_style_1);
+            findViewById(R.id.key_visiable).setBackgroundResource(R.drawable.style_own);
+
 
         }else {
             findViewById(R.id.radios).setBackgroundResource(R.drawable.style_own);
@@ -551,23 +553,17 @@ public class MyCalculatorActivity extends AppCompatActivity {
                     visiable.setVisibility(View.GONE);
                     i[0] = 1;
                     up_down.setImageResource(R.drawable.baseline_keyboard_double_arrow_up_24);
-                    if(theme.equals("dark")) {
-                        findViewById(R.id.radios).setBackgroundResource(R.drawable.style_own);
-                        findViewById(R.id.key_visiable).setBackgroundResource(R.drawable.style_own);
-                    }
-                } else {
-                    visiable.setVisibility(View.VISIBLE);
-                    if(theme.equals("dark")) {
-                        findViewById(R.id.radios).setBackgroundResource(R.drawable.nothig_style);
-                        findViewById(R.id.key_visiable).setBackgroundResource(R.drawable.nothig_style);
-                    }else{
+                    if(theme.equals("light")) {
+
+
+
                         findViewById(R.id.visible).setBackgroundResource(R.drawable.whiteback_style_1);
                         ((TextView) findViewById(R.id.button_sin)).setTextColor(Color.BLACK);
                         ((TextView) findViewById(R.id.button_cos)).setTextColor(Color.BLACK);
                         ((TextView) findViewById(R.id.button_tan)).setTextColor(Color.BLACK);
                         ((TextView) findViewById(R.id.button_ln)).setTextColor(Color.BLACK);
                         ((TextView) findViewById(R.id.button_log)).setTextColor(Color.BLACK);
-                        ((TextView) findViewById(R.id.button_factorial)).setTextColor(Color.BLACK);
+                      //  ((TextView) findViewById(R.id.button_factorial)).setTextColor(Color.BLACK);
                         ((TextView) findViewById(R.id.button_pi)).setTextColor(Color.BLACK);
                         ((TextView) findViewById(R.id.button_e)).setTextColor(Color.BLACK);
                         ((TextView) findViewById(R.id.button_square_root1)).setTextColor(Color.BLACK);
@@ -575,6 +571,19 @@ public class MyCalculatorActivity extends AppCompatActivity {
                         ((TextView) findViewById(R.id.button_end_parenthesis)).setTextColor(Color.BLACK);
                         ((TextView) findViewById(R.id.button_exponent111)).setTextColor(Color.BLACK);
                         ((TextView) findViewById(R.id.button_factorial1)).setTextColor(Color.BLACK);
+
+                    }
+                } else {
+
+                    visiable.setVisibility(View.VISIBLE);
+                    if(theme.equals("light")) {
+                        findViewById(R.id.radios).setBackgroundResource(R.drawable.style_own);
+                        findViewById(R.id.key_visiable).setBackgroundResource(R.drawable.style_own);
+
+                    }else{
+                        findViewById(R.id.radios).setBackgroundResource(R.drawable.nothig_style);
+                        findViewById(R.id.key_visiable).setBackgroundResource(R.drawable.nothig_style);
+
                     }
                     i[0] = 0;
                     up_down.setImageResource(R.drawable.baseline_keyboard_double_arrow_down_24);
